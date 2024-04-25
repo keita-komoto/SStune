@@ -1,0 +1,172 @@
+﻿<!doctype html>
+<html lang="jp"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keyword" content="スノーボード,ステッカー,印刷,加工,施工,ワンストップオーダー,snowboard,stiker,tune,print,construction">
+	<meta name="discription" content="MAKE UP SNOWBOARD ｜ スノーボードのデッキをオリジナルのデザインでメイクしよう。ワンストップオーダーでデザインから加工まで。デザイナーと直接相談して0からデザインを作ろう。 ｜ SStune">
+	<title>SStune-制作依頼フォーム</title>
+<!--/フォント-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rampart+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+<!--/フォント-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body class="another" id="top">
+	<header class="hd-bar">
+		<div class="hd-ctn">
+			<div class="hd-logo"><a href="index.html"><img src="images/sstune_logo_w.svg" alt="SStune"></a></div>
+			<div class="openbtn">
+				<div class="openbtn-line">
+					<span></span><span></span><span></span>
+				</div>
+				<div class="openbtn-box">
+					<div class="openbtn-ctn">
+						<nav>
+							<ul class="hd-nav">
+								<li><a href="index.html">ホーム</a></li>
+								<li><a href="about.html">当店について</a></li>
+								<li class="req-link"><a href="request.html">制作依頼する</a></li>
+								<li><a href="plan.html">プランについて</a></li>
+								<li><a href="works.html">制作事例</a></li>
+								<li><a href="form.html">お問い合わせ</a></li>
+							</ul>
+							<span class="pagebreak"></span>
+							<div class="nav-sns">
+								<ul>
+									<li><a href="https://twitter.com"><i class="fa-brands fa-twitter fa-fw"></i></a></li>
+									<li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-fw"></i></a></li>
+									<li><a href="#"><i class="fa-solid fa-blog fa-fw"></i></a></li>
+								</ul>
+							</div>
+							<div class="nav-logo"><a href="index.html"><img src="images/sstune_logo_bk.svg" alt="SStune"></a></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="req-title">
+		<h1>制作依頼フォーム</h1>
+	</div>
+	<div class="request-form">
+		<div class="req-ctn">
+			<form id="req-form" class="req-form" action="#">
+				<div class="form-box">
+					<p><label for="namae">お名前<span class="required">必須</span></label></p>
+					<input type="text" name="namae" id="namae" placeholder="雪板太郎" autocomplete="name">
+				</div>
+				<div class="form-box">
+					<p><label for="email">メールアドレス<span class="required">必須</span></label></p>
+					<input type="email" name="email" id="email" placeholder="mail@example.com" autocomplete="email" required>
+				</div>
+				<div class="form-box">
+					<p><label for="tel">電話番号<span class="required">必須</span></label></p>
+					<input type="tel" name="tel" id="tel" placeholder="ハイフンなし" autocomplete="tel" required>
+				</div>
+				<div class="form-box-add">
+					<p><label for="address-level1">ご自宅住所<span class="required">必須</span></label></p>
+					<div class="form-box">
+						<p><label for="postal-code">郵便番号<span class="required">7ケタ</span></label></p>
+						<input type="text" name="postal-code" id="postal-code" pattern="\d{3}-?\d{4}" placeholder="" autocomplete="post-code" required>
+					</div>
+					<div class="form-box"><p>
+						<label for="address-level1">都道府県</label></p>
+						<input type="text" name="address-level1" id="address-level1" placeholder="" autocomplete="address-level1" required>
+					</div>
+					<div class="form-box">
+						<p><label for="address-level2">市区町村</label></p>
+						<input type="text" name="address-level2" id="address-level2" placeholder="" autocomplete="address-level2" required>
+					</div>
+					<div class="form-box">
+						<p><label for="address-line1">番地・建物名・部屋番号等</label></p>
+						<input type="text" name="address-line1" id="address-line1" placeholder="" autocomplete="address-level2" required>
+					</div>
+				</div>
+				<div class="form-box">
+					<p><label for="plan">制作プラン</label><span class="required">必須</span></p>
+					<select name="plan" id="plan">
+						<option selected hidden>プランを選んでください</option>
+						<option value="1" required>コンプリート</option>
+						<option value="2">デザインのみ</option>
+						<option value="3">印刷のみ</option>
+						<option value="4">加工のみ</option>
+					</select>
+				</div>
+				<div class="form-box">
+					<p><label for="tomorrow">希望お届け日<span class="required">必須</span></label></p>
+					<input type="date" name="date" id="tomorrow"  required><br><span class="nouki-exp">※1
+					ヶ月後から選択できます。ご希望に添えない場合もあります。</span>
+				</div>
+				<div class="form-box">
+					<p><label for="kenma">下地研磨<span class="required">必須</span></label></p>
+					<input type="radio" name="kenma" value="good" required checked>しても良い
+					<input type="radio" name="kenma"  value="bad">しないでほしい
+				</div>
+				<div class="form-box">
+					<p><label for="design">制作方法<span class="required">必須</span></label></p>
+					<select name="design" id="design">
+						<option selected hidden>選んでください</option>
+						<option value="1" required>当店でオリジナルのデザインを制作</option>
+						<option value="2">使用したい画像あり</option>
+						<option value="3">完成データあり</option>
+					</select>
+				</div>
+				<div class="form-box">
+					<p><label for="payment">支払方法<span class="required">必須</span></label></p>
+					<select name="payment" id="payment">
+						<option selected hidden>選んでください</option>
+						<option value="1" required>銀行振込</option>
+						<option value="2">クレジットカード</option>
+						<option value="3">paypay</option>
+					</select>
+				</div>
+				<div class="form-box free-form-box">
+					<p><label for="free"><span class="free-exp">制作したいデザインの方向性等、自由に書いてください</span><span class="required">必須</span></label></p>
+					<textarea id="free" name="free"></textarea>
+				</div>
+ 				<div class="form-button">
+					<input type="submit" name="send" value="この内容で制作依頼する">
+				</div>
+			</form>
+		</div>
+	</div>
+
+		<div class="gotop">
+			<a href="#top"><i class="fas fa-chevron-up"></i></a>
+  		</div>
+		<footer>
+			<div class="nav-logo"><a href="index.html"><img src="images/sstune_logo_bk.svg" alt="SStune"></a></div>
+			<ul class="ft-nav">
+				<li><a href="index.html">ホーム</a></li>
+				<li><a href="about.html">当店について</a></li>
+				<li class="req-link"><a href="request.html">制作依頼する</a></li>
+				<li><a href="plan.html">プランについて</a></li>
+				<li><a href="works.html">制作事例</a></li>
+
+				<li><a href="form.html">お問い合わせ</a></li>
+			</ul>
+			<span class="pagebreak"></span>
+			<div class="ft-sns">
+				<ul>
+					<li><a href="https://twitter.com"><i class="fa-brands fa-twitter fa-fw"></i></a></li>
+					<li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-fw"></i></a></li>
+					<li><a href="#"><i class="fa-solid fa-blog fa-fw"></i></a></li>
+				</ul>
+			</div>
+			<p class="copyright">© SStune All rights reserved.</p>
+		</footer>
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/modaal.min.js"></script><script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
