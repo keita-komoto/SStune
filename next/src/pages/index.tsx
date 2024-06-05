@@ -3,7 +3,40 @@ import Image from 'next/image';
 import Head from 'next/head';
 import Script from 'next/script'
 
-
+import SstuneLogo_w from '/images/sstune_logo_w.svg';
+import SstuneLogo_bk from '/images/sstune_logo_bk.svg';
+import CatchCopy from '/images/catchcopy.svg';
+import BoardIcon from '/images/board_icon.svg';
+import BgPaper from '/images/bg_paper.svg';
+import CaretDown from '/images/caret-down.svg';
+import LogoIcon from '/images/logo_icon.svg';
+import Mockup1 from '/images/mockup_1.jpg';
+import Mockup2 from '/images/mockup_2.jpg';
+import Mockup3 from '/images/mockup_3.jpg';
+import Mockup4 from '/images/mockup_4.jpg';
+import Mockup5 from '/images/mockup_5.jpg';
+import PartsDesignIcon from '/images/partsdesign_icon.svg';
+import BgPlanBreak1 from '/images/plan_bg_break_1.svg';
+import BgPlanBreak2 from '/images/plan_bg_break_2.svg';
+import BgPlanBreak3 from '/images/plan_bg_break_3.svg';
+import BgPlanBreakBottom from '/images/plan_bg_break_btm.svg';
+import BgPlanBreakTop from '/images/plan_bg_break_top.svg';
+import PlanThum from '/images/plan_thum.jpg';
+import BgSstunePaint from '/images/sstune_bg_paint.svg';
+import BgSstunePaint_w from '/images/sstune_bg_paint_w.svg';
+import SstuneHeroPaint from '/images/sstune_hero_paint.svg';
+import SstuneHeroMain from '/images/sstune_hero1.jpg';
+import SstuneLogoBlackPng from  '/images/sstune_logo_bk.png';
+import SstuneLogoBlackSvg from  '/images/sstune_logo_bk.svg';
+import SstuneLogoWhitekPng from  '/images/sstune_logo_w.png';
+import SstuneLogoWthiteSvg from  '/images/sstune_logo_w.svg';
+import TelIcon from  '/images/tel_icon.svg';
+import WorksBoard1 from  '/images/works_board_1.png';
+import WorksBoard2 from  '/images/works_board_2.png';
+import WorksBoard3 from  '/images/works_board_3.png';
+import WorksBoard4 from  '/images/works_board_4.png';
+import WorksBoard5 from  '/images/works_board_5.png';
+import WorksBoard6 from  '/images/works_board_6.png';
 
 export default function Home() {
 	return (
