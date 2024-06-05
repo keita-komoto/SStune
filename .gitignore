@@ -413,3 +413,6 @@ $RECYCLE.BIN/
 
 # library
 js/
+
+# vscode
+.vscode/
