@@ -1,9 +1,10 @@
-//ヘッダーボタンのトグル
-$(".openbtn-box, .openbtn-line").click(function () {
-    $('.openbtn-box').toggleClass('box-act');
-	$('.openbtn-line').toggleClass('line-act');
-	$('.openbtn-ctn').toggleClass('ctn-act');
+$(".openButtonBox, .openButtonLine").click(function () {
+    $('.openButtonBox').toggleClass('boxAction');
+	$('.openButtonLine').toggleClass('lineAction');
+	$('.openButtonContainer').toggleClass('containerAction');
 });
+//ヘッダーボタンのトグル
+
 
 //スライド左の設定
   $('.slider-l').slick({

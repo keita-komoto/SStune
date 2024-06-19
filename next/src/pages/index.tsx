@@ -1,83 +1,52 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import Head from 'next/head';
-import Script from 'next/script'
+import Link from 'next/link'
+import Image from 'next/image'
+import Head from 'next/head'
 
-import SstuneLogo_w from '/images/sstune_logo_w.svg';
-import SstuneLogo_bk from '/images/sstune_logo_bk.svg';
-import CatchCopy from '/images/catchcopy.svg';
-import BoardIcon from '/images/board_icon.svg';
-import BgPaper from '/images/bg_paper.svg';
-import CaretDown from '/images/caret-down.svg';
-import LogoIcon from '/images/logo_icon.svg';
-import Mockup1 from '/images/mockup_1.jpg';
-import Mockup2 from '/images/mockup_2.jpg';
-import Mockup3 from '/images/mockup_3.jpg';
-import Mockup4 from '/images/mockup_4.jpg';
-import Mockup5 from '/images/mockup_5.jpg';
-import PartsDesignIcon from '/images/partsdesign_icon.svg';
-import BgPlanBreak1 from '/images/plan_bg_break_1.svg';
-import BgPlanBreak2 from '/images/plan_bg_break_2.svg';
-import BgPlanBreak3 from '/images/plan_bg_break_3.svg';
-import BgPlanBreakBottom from '/images/plan_bg_break_btm.svg';
-import BgPlanBreakTop from '/images/plan_bg_break_top.svg';
-import PlanThum from '/images/plan_thum.jpg';
-import BgSstunePaint from '/images/sstune_bg_paint.svg';
-import BgSstunePaint_w from '/images/sstune_bg_paint_w.svg';
-import SstuneHeroPaint from '/images/sstune_hero_paint.svg';
-import SstuneHeroMain from '/images/sstune_hero1.jpg';
-import SstuneLogoBlackPng from  '/images/sstune_logo_bk.png';
-import SstuneLogoBlackSvg from  '/images/sstune_logo_bk.svg';
-import SstuneLogoWhitekPng from  '/images/sstune_logo_w.png';
-import SstuneLogoWthiteSvg from  '/images/sstune_logo_w.svg';
-import TelIcon from  '/images/tel_icon.svg';
-import WorksBoard1 from  '/images/works_board_1.png';
-import WorksBoard2 from  '/images/works_board_2.png';
-import WorksBoard3 from  '/images/works_board_3.png';
-import WorksBoard4 from  '/images/works_board_4.png';
-import WorksBoard5 from  '/images/works_board_5.png';
-import WorksBoard6 from  '/images/works_board_6.png';
+import Header from '../components/header'
+
+import CatchCopy from '/images/catchcopy.svg'
+import BoardIcon from '/images/board_icon.svg'
+import BgPaper from '/images/bg_paper.svg'
+import CaretDown from '/images/caret-down.svg'
+import LogoIcon from '/images/logo_icon.svg'
+import Mockup1 from '/images/mockup_1.jpg'
+import Mockup2 from '/images/mockup_2.jpg'
+import Mockup3 from '/images/mockup_3.jpg'
+import Mockup4 from '/images/mockup_4.jpg'
+import Mockup5 from '/images/mockup_5.jpg'
+import PartsDesignIcon from '/images/partsdesign_icon.svg'
+import BgPlanBreak1 from '/images/plan_bg_break_1.svg'
+import BgPlanBreak2 from '/images/plan_bg_break_2.svg'
+import BgPlanBreak3 from '/images/plan_bg_break_3.svg'
+import BgPlanBreakBottom from '/images/plan_bg_break_btm.svg'
+import BgPlanBreakTop from '/images/plan_bg_break_top.svg'
+import PlanThum from '/images/plan_thum.jpg'
+import BgSstunePaint from '/images/sstune_bg_paint.svg'
+import BgSstunePaint_w from '/images/sstune_bg_paint_w.svg'
+import SstuneHeroPaint from '/images/sstune_hero_paint.svg'
+import SstuneHeroMain from '/images/sstune_hero1.jpg'
+import SstuneLogoBlackPng from  '/images/sstune_logo_bk.png'
+import SstuneLogoBlackSvg from  '/images/sstune_logo_bk.svg'
+import SstuneLogoWhitekPng from  '/images/sstune_logo_w.png'
+import SstuneLogoWthiteSvg from  '/images/sstune_logo_w.svg'
+import TelIcon from  '/images/tel_icon.svg'
+import WorksBoard1 from  '/images/works_board_1.png'
+import WorksBoard2 from  '/images/works_board_2.png'
+import WorksBoard3 from  '/images/works_board_3.png'
+import WorksBoard4 from  '/images/works_board_4.png'
+import WorksBoard5 from  '/images/works_board_5.png'
+import WorksBoard6 from  '/images/works_board_6.png'
+import Script from 'next/script'
 
 export default function Home() {
 	return (
 		<>
 			<Head>
 				<title>SStune-スノーボードのオリジナルラッピングステッカー制作</title>
+				<meta name="description" content="MAKE UP SNOWBOARD ｜ スノーボードのデッキをオリジナルのデザインでメイクしよう。ワンストップオーダーでデザインから加工まで。デザイナーと直接相談して0からデザインを作ろう ｜ SStune" />
 			</Head>
+			<Header />
 			<div className="home">
-				<header className="hd-bar">
-					<div className="hd-ctn">
-						<div className="hd-logo"><Link href="/"><Image src={SstuneLogo_w} alt="SStune" /></Link></div>
-						<div className="openbtn">
-							<div className="openbtn-line">
-								<span></span><span></span><span></span>
-							</div>
-							<div className="openbtn-box">
-								<div className="openbtn-ctn">
-									<nav>
-										<ul className="hd-nav">
-											<li><Link href="index.html">ホーム</Link></li>
-											<li><Link href="about.html">当店について</Link></li>
-											<li className="req-link"><Link href="request.html">制作依頼する</Link></li>
-											<li><Link href="plan.html">プランについて</Link></li>
-											<li><Link href="works.html">制作事例</Link></li>
-											<li><Link href="form.html">お問い合わせ</Link></li>
-										</ul>
-										<span className="pagebreak"></span>
-										<div className="nav-sns">
-											<ul>
-												<li><Link href="https://twitter.com"><i className="fa-brands fa-twitter fa-fw"></i></Link></li>
-												<li><Link href="https://www.instagram.com"><i className="fa-brands fa-instagram fa-fw"></i></Link></li>
-												<li><Link href="#"><i className="fa-solid fa-blog fa-fw"></i></Link></li>
-											</ul>
-										</div>
-										<div className="nav-logo"><Link href="index.html"><Image src={SstuneLogoBlackSvg} alt="SStune" /></Link></div>
-									</nav>
-								</div>
-							</div>
-						</div>
-					</div>
-				</header>
 				<div className="hero" id="top">
 					<div className="hero-ctn">
 						<div className="hero-bg"><Image src={SstuneHeroPaint} alt="top_picture" /></div>
@@ -241,10 +210,10 @@ export default function Home() {
 						<p className="copyright">© SStune All rights reserved.</p>
 					</footer>
 				</div>
-				<script defer src="/js/jquery-3.6.0.min.js"></script>
-				<script defer type="text/javascript" src="/js/slick.js"></script>
-				<script defer type="text/javascript" src="/js/script.js"></script>
+				<Script defer src="/js/jquery-3.6.0.min.js"></Script>
+				<Script defer type="text/javascript" src="/js/slick.js"></Script>
+				<Script defer type="text/javascript" src="/js/script.js"></Script>
 			</div>
 		</>
-	);
+	)
 }

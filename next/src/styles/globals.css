@@ -2,32 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 14px;
+}
+@media (min-width:768px) {
+	html{
+		margin: 0 auto;
+		font-size: 16px;
+	}
+}
+.main {
+	overflow-x: hidden;
+	background-image: url("/images/sstune_bg_paint_w.svg");
+	background-repeat: repeat;
+	background-size: auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+.another{
+	overflow-x: hidden;
+	background-image: url("/images/sstune_bg_paint_w.svg");
+	background-repeat: repeat;
+	background-size: auto;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h2 , h3{
+	font-family: "Sawarabi Gothic";
+	font-weight: bold;
+	font-size: 2rem;
+}
+h3 {
+	font-size:1.75rem;
 }
