@@ -210,9 +210,6 @@ export default function Home() {
 						<p className="copyright">© SStune All rights reserved.</p>
 					</footer>
 				</div>
-				<Script defer src="/js/jquery-3.6.0.min.js"></Script>
-				<Script defer type="text/javascript" src="/js/slick.js"></Script>
-				<Script defer type="text/javascript" src="/js/script.js"></Script>
 			</div>
 		</>
 	)
