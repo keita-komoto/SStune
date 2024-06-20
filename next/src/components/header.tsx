@@ -2,11 +2,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
 import { useState, useEffect} from 'react';
+import classNames from 'classnames'
 
 import styles from '../styles/header.module.css'
 
 import SstuneLogo_w from '/images/sstune_logo_w.svg'
 import SstuneLogo_bk from '/images/sstune_logo_bk.svg'
+import { isatty } from 'tty';
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false);
@@ -15,45 +17,21 @@ const Header = () => {
     };
 
     useEffect(() => {
-        const elementsBox = document.querySelectorAll(`.${styles.openButtonBox}`);
-        const elementsLine = document.querySelectorAll(`.${styles.openButtonLine}`);
-        const elementsContainer = document.querySelectorAll(`.${styles.openButtonContainer}`);
-
-        elementsBox.forEach((element) => {
-            if (isActive) {
-                element.classList.add(styles.boxAction);
-            } else {
-                element.classList.remove(styles.boxAction);
-            }
-        });
-
-        elementsLine.forEach((element) => {
-            if (isActive) {
-                element.classList.add(styles.lineAction);
-            } else {
-                element.classList.remove(styles.lineAction);
-            }
-        });
-
-        elementsContainer.forEach((element) => {
-            if (isActive) {
-                element.classList.add(styles.containerAction);
-            } else {
-                element.classList.remove(styles.containerAction);
-            }
-            })
-        }, [isActive])
+        console.log('styles:', styles);
+        console.log('isActive:', isActive);
+        console.log('openButtonContainer class:', `${styles.openButtonContainer} ${isActive ? styles.containerAction : ''}`);
+      }, [isActive]);
 
     return (
         <header className={styles.headerBar}>
             <div className={styles.headerBarContainer}>
                 <div className={styles.HeaderLogo}><Link href="#"><Image src={SstuneLogo_w} alt="SStune" /></Link></div>
                 <div className={styles.openButton}>
-                    <div className={styles.openButtonLine} onClick={handleClick}>
+                    <div className={classNames(styles.openButtonLine, { [styles.lineAction]: isActive})} onClick={handleClick}>
                         <span></span><span></span><span></span>
                     </div>
-                    <div className={styles.openButtonBox} onClick={handleClick}>
-                        <div className={styles.openButtonContainer} onClick={handleClick}>
+                    <div className={classNames(styles.openButtonBox, { [styles.boxAction]: isActive})} onClick={handleClick}>
+                        <div className={classNames(styles.openButtonContainer, { [styles.containerAction]: isActive})} onClick={handleClick}>
                             <nav>
                                 <ul className={styles.headernNavigation}>
                                     <li><Link href="index.html">ホーム</Link></li>

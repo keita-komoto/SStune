@@ -113,7 +113,7 @@
 		width: 100%;
 }
 /* ヘッダーボックス */
-.opneButtonBox {
+.openButtonBox {
 	transition: all .4s;
 	position: fixed;
 	top: 1.5rem;
@@ -147,7 +147,7 @@
 	display: none;
 
 }
-.openButtonContainer.containerAcion {
+.openButtonContainer.containerAction {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -177,11 +177,11 @@
 	text-decoration: none;
 	font-size: 1.25rem;
 }
-.headerNavigation .req-link a{
+.headerNavigation .reqeustLink a{
 	color: #dd5511;
 }
 
-.headerNavigation a:hover,.snsNavigation ul li a:hover,.nav-logo a:hover{
+.headerNavigation a:hover,.snsNavigation ul li a:hover,.navigationLogo a:hover{
 	opacity: 0.8;
 	color: rgba(255,87,0,0.80);
 }
