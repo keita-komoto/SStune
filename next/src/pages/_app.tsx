@@ -1,6 +1,5 @@
 import "@/styles/globals.css";
 import "@/styles/normalize.css";
-import "@/styles/style.css";
 import "@/styles/modaal.css";
 import "@/styles/slick.css";
 import Script from "next/script";
