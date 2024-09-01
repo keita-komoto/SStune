@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import "@/styles/normalize.css";
 import "@/styles/modaal.css";
 import "@/styles/slick.css";
-import Script from "next/script";
+import "@/fontawesome/css/all.min.css";
 
 import type { AppProps } from "next/app";
 import Head from "next/head";
