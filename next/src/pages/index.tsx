@@ -37,6 +37,7 @@ import WorksBoard4 from  '/images/works_board_4.png'
 import WorksBoard5 from  '/images/works_board_5.png'
 import WorksBoard6 from  '/images/works_board_6.png'
 import Script from 'next/script'
+import NoSSR from '@/components/no-ssr'
 
 export default function Home() {
 	return (
@@ -63,11 +64,13 @@ export default function Home() {
 						<div className="character-box">
 							<div className="exp-ctn">
 								<div className="exp-icon"><Image src={BoardIcon} alt="完全オリジナル" /></div>
-								<div className="exp-stc"><p>完全オリジナルデザイン！<br/>施工までお任せください！</p></div>
+								<div className="exp-stc">
+									<NoSSR><p>完全オリジナルデザイン！<br/>施工までお任せください！</p></NoSSR>
+								</div>
 							</div>
 							<div className="exp-ctn clm2">
 								<div className="exp-icon"><Image src={TelIcon} alt="直接相談" /></div>
-								<div className="exp-stc"><p>完全オリジナルデザイン！<br/>施工までお任せください！</p></div>
+								<div className="exp-stc"><p>デザイナーと直接相談できる！<br/>電話・LINE・ビデオ通話etc…</p></div>
 							</div>
 							<div className="exp-ctn">
 								<div className="exp-icon"><Image src={LogoIcon} alt="各社ロゴ使用可能" /></div>
