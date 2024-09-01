@@ -8,7 +8,6 @@ import styles from '../styles/header.module.css'
 
 import SstuneLogo_w from '/images/sstune_logo_w.svg'
 import SstuneLogo_bk from '/images/sstune_logo_bk.svg'
-import { isatty } from 'tty';
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false);
@@ -33,10 +32,10 @@ const Header = () => {
                     <div className={classNames(styles.openButtonBox, { [styles.boxAction]: isActive})} onClick={handleClick}>
                         <div className={classNames(styles.openButtonContainer, { [styles.containerAction]: isActive})} onClick={handleClick}>
                             <nav>
-                                <ul className={styles.headernNavigation}>
+                                <ul className={styles.headerNavigation}>
                                     <li><Link href="index.html">ホーム</Link></li>
                                     <li><Link href="about.html">当店について</Link></li>
-                                    <li className={styles.requestLink}><Link href="request.html">制作依頼する</Link></li>
+                                    <li><Link className={styles.requestLink} href="request.html">制作依頼する</Link></li>
                                     <li><Link href="plan.html">プランについて</Link></li>
                                     <li><Link href="works.html">制作事例</Link></li>
                                     <li><Link href="form.html">お問い合わせ</Link></li>
