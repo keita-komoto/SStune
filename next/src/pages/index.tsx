@@ -2,7 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
 
-import Header from '../components/header'
+import Header from '@/components/header'
+import Footer from '@/components/footer'
 
 import CatchCopy from '/images/catchcopy.svg'
 import BoardIcon from '/images/board_icon.svg'
@@ -25,8 +26,7 @@ import BgSstunePaint from '/images/sstune_bg_paint.svg'
 import BgSstunePaint_w from '/images/sstune_bg_paint_w.svg'
 import SstuneHeroPaint from '/images/sstune_hero_paint.svg'
 import SstuneHeroMain from '/images/sstune_hero1.jpg'
-import SstuneLogoBlackPng from  '/images/sstune_logo_bk.png'
-import SstuneLogoBlackSvg from  '/images/sstune_logo_bk.svg'
+
 import SstuneLogoWhitekPng from  '/images/sstune_logo_w.png'
 import SstuneLogoWthiteSvg from  '/images/sstune_logo_w.svg'
 import TelIcon from  '/images/tel_icon.svg'
@@ -185,30 +185,7 @@ export default function Home() {
 
 						</div>
 					</div>
-					<div className="gotop">
-						<Link href="#top"><i className="fas fa-chevron-up"></i></Link>
-					</div>
-					<footer>
-						<div className="nav-logo"><Link href="index.html"><Image src={SstuneLogoBlackSvg} alt="SStune" /></Link></div>
-						<ul className="ft-nav">
-							<li><Link href="index.html">ホーム</Link></li>
-							<li><Link href="about.html">当店について</Link></li>
-							<li className="req-link"><Link href="request.html">制作依頼する</Link></li>
-							<li><Link href="plan.html">プランについて</Link></li>
-							<li><Link href="works.html">制作事例</Link></li>
-
-							<li><Link href="form.html">お問い合わせ</Link></li>
-						</ul>
-						<span className="pagebreak"></span>
-						<div className="ft-sns">
-							<ul>
-								<li><Link href="https://twitter.com"><i className="fa-brands fa-twitter fa-fw"></i></Link></li>
-								<li><Link href="https://www.instagram.com"><i className="fa-brands fa-instagram fa-fw"></i></Link></li>
-								<li><Link href="#"><i className="fa-solid fa-blog fa-fw"></i></Link></li>
-							</ul>
-						</div>
-						<p className="copyright">© SStune All rights reserved.</p>
-					</footer>
+					<Footer />
 				</div>
 			</div>
 		</>

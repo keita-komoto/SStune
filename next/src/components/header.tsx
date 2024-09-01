@@ -24,7 +24,7 @@ const Header = () => {
     return (
         <header className={styles.headerBar}>
             <div className={styles.headerBarContainer}>
-                <div className={styles.HeaderLogo}><Link href="#"><Image src={SstuneLogo_w} alt="SStune" /></Link></div>
+                <div className={styles.headerLogo}><Link href="#"><Image src={SstuneLogo_w} alt="SStune" /></Link></div>
                 <div className={styles.openButton}>
                     <div className={classNames(styles.openButtonLine, { [styles.lineAction]: isActive})} onClick={handleClick}>
                         <span></span><span></span><span></span>
